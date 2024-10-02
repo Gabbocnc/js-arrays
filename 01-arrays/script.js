@@ -22,7 +22,7 @@ const lastTeacher = teachers.pop();
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
 const firstTeacher = teachers.shift();
-console.log(teachers);
+console.log(firstTeacher);
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 teachers.push('Vanessa');
@@ -36,11 +36,13 @@ console.log(teachers);
 // e salva il risultato nella variabile isFabioPresent
 const isFabioPresent = 'Fabio';
 const exist = teachers.includes(isFabioPresent);
+console.log(exist);
+
 
 // 8. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
 
-const lewisIndex = teachers.findIndex( teachers => teachers === 'Lewis');
+const lewisIndex = teachers.findIndex( teacher => teacher === 'Lewis');
 console.log(lewisIndex); 
 
 // 9. Unisci tutti gli insegnanti nell'array teachers in una stringa
